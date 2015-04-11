@@ -10,12 +10,7 @@
  */
 angular
   .module('sujayKhandekarApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+    'ngRoute'
   ])
   .config(function ($routeProvider) {
     $routeProvider
