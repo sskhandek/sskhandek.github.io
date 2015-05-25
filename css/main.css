@@ -1,14 +1,9 @@
-body{
-    background-color: #3172DC;
-    color: white;
-}
-
 .main-container{
     margin-top:100px;
 }
 
 .vertical-line{
-    border-right: thin solid white;
+    border-right: thin solid black;
 }
 
 .profile-image{
@@ -23,9 +18,30 @@ body{
 
 .profile-name{
     margin-top: 20px;
+    margin-bottom:10px;
+}
+
+.profile-subtext{
+    color:gray;
+    margin-top: 0;
 }
 
 .contact-list{
     list-style-type: none;
-    text-align: center;
+}
+
+.contact-list li{
+    display:inline-block;
+    margin-right:10px;
+
+}
+
+.contact-list a{
+    margin: 0;
+    width: 130px;
+}
+
+.company-icons{
+    width:100px;
+    height:auto;
 }

@@ -5,22 +5,32 @@
       <div style="text-align:center">
         <img src="images/profile.jpg" class="profile-image">
         <h4 class="profile-name">Sujay Khandekar</h4>
+        <span class="profile-subtext">Front-end Developer</span>
       </div>
     </div>
 
     <div class="one-half column">
       <section>
+        <h5>About</h5>
+        <p>
+          I am currently an undergraduate at the <img src="images/uiuc-icon.jpg" style="height:20px;width:auto;vertical-align: top;">
+          University of Illinois: Urbana-Champaign, pursuing a degree in Computer Science and a minor in Technology & Management.
+          My primary fields of focus are UI/UX and HCI. I also enjoy running and listening to any sort of music in my spare time.
+        </img>
+      </section>
+      <section>
+        <h5>Contact</h5>
         <ul class="contact-list">
           <li ng-repeat="item in contactLinks">
-            <a href="{{item.link}}" class="button"><i class="{{item.icon}}" style="color:white"></i></a>
+            <a href="{{item.link}}" class="button">{{item.name}}</a>
           </li>
         </ul>
+      </section>
+      <section style="color:gray;text-align: center;">
+        <i>"When Henry Ford made cheap, reliable cars people said, 'Nah, what's wrong with a horse?' That was a huge bet he made, and it worked.
+          "</i> <br> - Elon Musk
       </section>
     </div>
 
   </div>
 </div>
-
-<footer class="text-center">
-  Copyright &copy; Sujay Khandekar 2015
-</footer>
