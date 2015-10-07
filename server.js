@@ -4,7 +4,7 @@
 
 const PORT = 8000;
 
-// requires
+// Requires
 var express = require('express');
 var app = express();
 
