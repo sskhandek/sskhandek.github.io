@@ -1,0 +1,12 @@
+{
+  "name": "sskhandek.github.io",
+  "version": "0.0.1",
+  "description": "My website with interactive, dynamic elements",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sskhandek/sskhandek.github.io.git"
+  },
+  "dependencies": {
+    "express": "latest"
+  }
+}
