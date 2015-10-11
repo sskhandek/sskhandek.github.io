@@ -2,7 +2,7 @@
  * Created by SujayKhandekar on 10/3/15.
  */
 
-const PORT = 8000;
+const PORT = 80;
 
 // Requires
 var express = require('express');
