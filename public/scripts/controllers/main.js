@@ -48,5 +48,16 @@ angular.module('sujayKhandekarApp')
         "http://brandevolutionist.com/wp-content/uploads/2015/04/square-facebook-512.png"
     ];
 
+    $scope.quotes = [
+        "Creativity is intelligence having fun. - Albert Einstein",
+        "You either die a hero, or live long enough to see yourself become the villain. - The Batman",
+        "I'm going to make him an offer he can't refuse. - The Godfather",
+        "No man should escape our universities without knowing how little he knows. - Robert Oppenheimer",
+        "I've got my mind on my money, and my money on my mind - Snoop Dogg, Urban Philosopher"
+      ];
+
+    $scope.displayQuote = function(){
+      $scope.quote = $scope.quotes[Math.floor(Math.random() * $scope.quotes.length)];
+    }();
 
   });
