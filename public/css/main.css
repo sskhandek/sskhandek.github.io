@@ -1,15 +1,18 @@
+
+
 .main-container{
-    margin-top:100px;
+    margin-top:40px;
 }
 
-.vertical-line{
-    border-right: thin solid black;
+.profile{
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .profile-image{
     vertical-align: middle;
-    width: 80%;
-    height: auto;
+    width: auto;
+    height: 400px;
 }
 
 .profile-container{
@@ -18,7 +21,7 @@
 
 .profile-name{
     margin-top: 20px;
-    margin-bottom:10px;
+    margin-bottom:5px;
 }
 
 .profile-subtext{
@@ -33,15 +36,24 @@
 .contact-list li{
     display:inline-block;
     margin-right:10px;
-
-}
-
-.contact-list a{
-    margin: 0;
-    width: 130px;
 }
 
 .company-icons{
     width:100px;
     height:auto;
+}
+
+@media (max-width: 745px) {
+    .contact-list a{
+        width: 100px;
+        text-align: center;
+        font-size: 7px;
+     }
+}
+
+@media (min-width: 746px) and (max-width: 1440px) {
+    .contact-list a{
+        margin: 0;
+        width: 130px;
+    }
 }
