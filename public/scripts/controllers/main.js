@@ -11,11 +11,6 @@ angular.module('sujayKhandekarApp')
   .controller('MainCtrl', function ($scope) {
     $scope.contactLinks = [
       {
-        "name": "Facebook",
-        "icon":"facebook",
-        "link":"https://www.facebook.com/sujay.khandekar"
-      },
-      {
         "name": "Google+",
         "icon":"fa fa-google-plus fa-2x",
         "link":"https://plus.google.com/105856798281199967470/posts"
@@ -41,12 +36,4 @@ angular.module('sujayKhandekarApp')
       }
 
     ];
-
-    $scope.companies = [
-        "https://pbs.twimg.com/profile_images/568847126793175040/05a1ib0K.png",
-        "http://a1031.phobos.apple.com/us/r1000/018/Purple4/v4/a1/2c/40/a12c4071-c770-f925-8fd4-1be7584f9586/V4HttpAssetRepositoryClient-mzl.gflvstsz.png-6095098972935482443.png",
-        "http://brandevolutionist.com/wp-content/uploads/2015/04/square-facebook-512.png"
-    ];
-
-
   });
