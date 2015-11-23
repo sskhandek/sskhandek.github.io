@@ -1,5 +1,3 @@
-
-
 .main-container{
     margin-top:40px;
 }
@@ -29,31 +27,27 @@
     margin-top: 0;
 }
 
-.contact-list{
+.contacts {
+    text-align: center;
+    position: relative;
+}
+
+.contacts ul{
     list-style-type: none;
 }
 
-.contact-list li{
-    display:inline-block;
-    margin-right:10px;
+.contacts li {
+    display: inline;
 }
 
-.company-icons{
-    width:100px;
-    height:auto;
+.link {
+    color: #446CB3;
+    text-decoration: none;
+    border-bottom: #042c73 1px dotted;
 }
 
-@media (max-width: 745px) {
-    .contact-list a{
-        width: 100px;
-        text-align: center;
-        font-size: 7px;
-     }
-}
-
-@media (min-width: 746px) and (max-width: 1440px) {
-    .contact-list a{
-        margin: 0;
-        width: 130px;
-    }
+.link:hover {
+    background-color: #b7dfff;
+    border-bottom: none;
+    display: inline;
 }
