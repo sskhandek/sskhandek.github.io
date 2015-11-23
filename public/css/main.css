@@ -1,15 +1,16 @@
 .main-container{
-    margin-top:100px;
+    margin-top:40px;
 }
 
-.vertical-line{
-    border-right: thin solid black;
+.profile{
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .profile-image{
     vertical-align: middle;
-    width: 80%;
-    height: auto;
+    width: auto;
+    height: 400px;
 }
 
 .profile-container{
@@ -18,7 +19,7 @@
 
 .profile-name{
     margin-top: 20px;
-    margin-bottom:10px;
+    margin-bottom:5px;
 }
 
 .profile-subtext{
@@ -26,22 +27,27 @@
     margin-top: 0;
 }
 
-.contact-list{
+.contacts {
+    text-align: center;
+    position: relative;
+}
+
+.contacts ul{
     list-style-type: none;
 }
 
-.contact-list li{
-    display:inline-block;
-    margin-right:10px;
-
+.contacts li {
+    display: inline;
 }
 
-.contact-list a{
-    margin: 0;
-    width: 130px;
+.link {
+    color: #446CB3;
+    text-decoration: none;
+    border-bottom: #042c73 1px dotted;
 }
 
-.company-icons{
-    width:100px;
-    height:auto;
+.link:hover {
+    background-color: #b7dfff;
+    border-bottom: none;
+    display: inline;
 }
