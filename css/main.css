@@ -13,6 +13,14 @@
     height: auto;
 }
 
+@media screen and (min-width: 480px) {
+    .profile-image{
+        vertical-align: middle;
+        width: 50%;
+        height: auto;
+    }
+}
+
 .profile-container{
     text-align: center;
 }
