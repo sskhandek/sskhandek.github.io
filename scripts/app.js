@@ -5,11 +5,6 @@ angular.module('sujayKhandekarApp')
   .controller('MainCtrl', function ($scope) {
     $scope.contactLinks = [
       {
-        name: 'Google+',
-        "icon":"fa fa-google-plus fa-2x",
-        "link":"https://plus.google.com/105856798281199967470/posts"
-      },
-      {
         "name": "Twitter",
         "icon":"fa fa-twitter fa-2x",
         "link":"https://twitter.com/sujaykhandekar"
@@ -20,13 +15,9 @@ angular.module('sujayKhandekarApp')
         "link":"https://www.linkedin.com/in/sujaykhandekar"
       },
       {
-        "name": "Quora",
-        "link": "http://www.quora.com/Sujay-Khandekar-1"
-      },
-      {
         "name": "Resume",
         "icon":"fa fa-file-text-o fa-2x",
         "link":"images/resume.pdf"
-    }
+      }
     ];
   });
