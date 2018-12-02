@@ -2,47 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Sujay Khandekar</title>
+    <title>👋 I'm Sujay</title>
     <meta name="author" content="Sujay Khandekar">
-    <meta name="description" content="Sujay Khandekar's Personal Website">
+    <meta name="description" content="Sujay Khandekar's  Website">
     <meta name="viewport" content="width=device-width">
-    <base href="/">
-
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!-- Styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
-    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css"/>
   </head>
 
-  <body ng-app="sujayKhandekarApp">
-    <header class="container main-container" ng-controller="MainCtrl">
+  <body>
+    <header class="container main-container">
       <div class="profile">
         <div style="text-align:center">
-          <img src="images/profile.jpg" class="profile-image">
+          <img src="profile.jpg" class="profile-image">
           <h4 class="profile-name">Sujay Khandekar</h4>
-          <span class="profile-subtext">Programmer, Researcher, Fighting Illini</span>
+          <span class="profile-subtext">Software Engineer | University of Illinois Alumnus</span>
         </div>
       </div>
       <div>
         <section class="contacts">
           <ul>
-            <li ng-repeat="c in contactLinks">
-              <a href="{{c.link}}" class="link">{{c.name}}</a>
-              <span ng-hide="{{$last}}"> &diams; </span>
+            <li>
+              <a href="https://twitter.com/sujaykhandekar" class="link">Twitter</a>
+            </li>▪️
+            <li>
+              <a href="https://www.linkedin.com/in/sujaykhandekar" class="link">LinkedIn</a>
             </li>
+
           </ul>
         </section>
         <section>
           <h5>About</h5>
           <p>
-            I am currently a graduate student at the <img src="images/uiuc-icon.jpg" style="height:20px;width:auto;vertical-align: top;"/>
+            I'm currently a software engineer at <a class="link" href="https://www.samsara.com/">Samsara</a> in San Francisco, California. I was a student at the
             <a class="link" href="http://illinois.edu">University of Illinois: Urbana-Champaign </a>
-            , pursuing the 
+            , completing the 
             <a class="link" href="https://cs.illinois.edu/academics/graduate/fifth-year-masters-programs/5-year-bs-ms-program"> 5-Year BS/MS program in Computer Science </a>
              with a minor in
             <a class="link" href="http://www.techmgmt.illinois.edu/">Technology &amp; Management.</a>
-            My primary fields of focus are UI/UX and HCI. I also enjoy running and listening to any sort of music in my spare time.
+            My primary fields of focus are UI/UX and HCI.
           </p>
         </section>
         <section>
@@ -55,12 +56,5 @@
         </section>
       </div>
     </header>
-
-    <!--Scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-
 </body>
 </html>
