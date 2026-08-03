@@ -26,5 +26,6 @@ export const quotes: Quote[] = [
     id: 'life-of-pi-letting-go',
     text: 'I suppose in the end, the whole of life becomes an act of letting go, but what always hurts the most is not taking a moment to say goodbye.',
     source: 'Life of Pi',
+    image: '/images/quotes/life-of-pi.jpg',
   },
 ];
