@@ -6,7 +6,7 @@ import { quotes } from '../data/quotes';
 <Layout
   title="Quotes — Sujay Khandekar"
   description="Movie and other quotes Sujay Khandekar keeps coming back to."
-  ogDescription="A small collection of favorite quotes, as images."
+  ogDescription="A small collection of favorite quotes from movies and elsewhere."
   path="/quotes"
   wide
 >
@@ -16,29 +16,28 @@ import { quotes } from '../data/quotes';
     <p class="lede">Lines from movies and elsewhere that stick with me.</p>
   </header>
 
-  {quotes.length === 0 ? (
-    <section class="quotes-empty" aria-live="polite">
-      <p>The first quote image is on its way. Check back soon.</p>
-    </section>
-  ) : (
-    <section class="quotes" aria-label="Favorite quotes">
-      <ul class="quote-list">
-        {quotes.map((quote, index) => (
-          <li class="quote" style={`--i: ${index}`}>
-            <figure>
+  <section class="quotes" aria-label="Favorite quotes">
+    <ul class="quote-list">
+      {quotes.map((quote, index) => (
+        <li class="quote" style={`--i: ${index}`}>
+          <figure>
+            {quote.image && (
               <img
                 src={quote.image}
-                alt={quote.alt}
+                alt={quote.alt ?? `Still from ${quote.source}`}
                 loading={index === 0 ? 'eager' : 'lazy'}
                 decoding="async"
               />
-              {quote.source && <figcaption>{quote.source}</figcaption>}
-            </figure>
-          </li>
-        ))}
-      </ul>
-    </section>
-  )}
+            )}
+            <blockquote>
+              <p>{quote.text}</p>
+            </blockquote>
+            <figcaption>{quote.source}</figcaption>
+          </figure>
+        </li>
+      ))}
+    </ul>
+  </section>
 
   <footer>
     <nav>

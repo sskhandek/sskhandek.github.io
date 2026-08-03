@@ -1,24 +1,31 @@
 export interface Quote {
-  /** Stable id used for keys and image filenames */
+  /** Stable id used for keys */
   id: string;
-  /** Path under /public, e.g. /images/quotes/arrival.jpg */
-  image: string;
-  /** Short accessible description of the quote image */
-  alt: string;
-  /** Optional attribution shown under the image */
-  source?: string;
+  /** The quote text */
+  text: string;
+  /** Film / source attribution */
+  source: string;
+  /**
+   * Optional screenshot under /public, e.g. /images/quotes/life-of-pi.jpg.
+   * When present, shown above the text.
+   */
+  image?: string;
+  /** Accessible description when image is set */
+  alt?: string;
 }
 
 /**
- * Drop quote images in public/images/quotes/ and add an entry here.
- * Newest first.
+ * Newest first. Optional images live in public/images/quotes/.
  */
 export const quotes: Quote[] = [
-  // Example once you add the file:
-  // {
-  //   id: 'arrival-language',
-  //   image: '/images/quotes/arrival.jpg',
-  //   alt: 'Quote from Arrival about language shaping thought',
-  //   source: 'Arrival',
-  // },
+  {
+    id: 'life-of-pi-letting-go',
+    text: 'I suppose in the end, the whole of life becomes an act of letting go, but what always hurts the most is not taking a moment to say goodbye.',
+    source: 'Life of Pi',
+  },
+  {
+    id: 'before-sunrise-saved-time',
+    text: 'People always talk about how great technology is, how it saves all this time. But what good is saved time if nobody uses it? It just turns into more busy work.',
+    source: 'Before Sunrise',
+  },
 ];
