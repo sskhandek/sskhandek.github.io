@@ -130,18 +130,6 @@ section {
     margin-bottom: 2.5rem;
 }
 
-.intro {
-    font-size: 1.15rem;
-}
-
-/* Callout */
-.callout {
-    background: var(--bg-subtle);
-    padding: 1.5rem;
-    border-radius: 4px;
-    border-left: 3px solid var(--accent);
-}
-
 /* Footer */
 footer {
     margin-top: 4rem;
