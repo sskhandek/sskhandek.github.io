@@ -1,8 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { quotes } from '../data/quotes';
 ---
 
-<Layout path="/">
+<Layout path="/" wide>
     <header>
         <img src="/images/profile.jpg" alt="Sujay Khandekar" class="profile">
         <h1>Sujay Khandekar</h1>
@@ -35,14 +36,32 @@ import Layout from '../layouts/Layout.astro';
         </ul>
     </section>
 
-    <section class="teaser">
-        <h2><a href="/quotes">Quotes</a></h2>
-        <p>A few lines from movies and elsewhere that stick with me.</p>
+    <section class="quotes-gallery" aria-label="Favorite quotes">
+        <ul class="quote-grid">
+            {quotes.map((quote, index) => (
+                <li class="quote" style={`--i: ${index}`}>
+                    <figure>
+                        {quote.image ? (
+                            <img
+                                src={quote.image}
+                                alt={`“${quote.text}” — ${quote.source}`}
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        ) : (
+                            <blockquote>
+                                <p>{quote.text}</p>
+                            </blockquote>
+                        )}
+                        <figcaption>{quote.source}</figcaption>
+                    </figure>
+                </li>
+            ))}
+        </ul>
     </section>
 
     <footer>
         <nav>
-            <a href="/quotes">Quotes</a>
             <a href="https://x.com/sujaykhandekar">X</a>
             <a href="https://www.linkedin.com/in/sujaykhandekar/">LinkedIn</a>
         </nav>
