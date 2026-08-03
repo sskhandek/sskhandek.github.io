@@ -21,17 +21,18 @@ import { quotes } from '../data/quotes';
       {quotes.map((quote, index) => (
         <li class="quote" style={`--i: ${index}`}>
           <figure>
-            {quote.image && (
+            {quote.image ? (
               <img
                 src={quote.image}
-                alt={quote.alt ?? `Still from ${quote.source}`}
+                alt={`“${quote.text}” — ${quote.source}`}
                 loading={index === 0 ? 'eager' : 'lazy'}
                 decoding="async"
               />
+            ) : (
+              <blockquote>
+                <p>{quote.text}</p>
+              </blockquote>
             )}
-            <blockquote>
-              <p>{quote.text}</p>
-            </blockquote>
             <figcaption>{quote.source}</figcaption>
           </figure>
         </li>
