@@ -38,6 +38,10 @@ main {
     padding: 4rem 1.5rem;
 }
 
+main.wide {
+    max-width: 720px;
+}
+
 /* Typography */
 h1, h2, h3 {
     font-family: var(--font-display);
@@ -128,6 +132,97 @@ header p {
 /* Sections */
 section {
     margin-bottom: 2.5rem;
+}
+
+.teaser p {
+    color: var(--text-muted);
+}
+
+/* Quotes page */
+.page-header {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.page-header .eyebrow {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.page-header .eyebrow a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.page-header .eyebrow a:hover {
+    color: var(--accent);
+}
+
+.page-header h1 {
+    margin-top: 0;
+}
+
+.page-header .lede {
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+    max-width: 28em;
+}
+
+.quotes-empty {
+    padding: 2.5rem 0 1rem;
+    border-top: 1px solid #d5d0c8;
+    color: var(--text-muted);
+}
+
+.quote-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.quote {
+    margin: 0;
+    opacity: 0;
+    transform: translateY(12px);
+    animation: quote-in 0.7s ease forwards;
+    animation-delay: calc(var(--i, 0) * 0.08s);
+}
+
+@keyframes quote-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quote figure {
+    margin: 0;
+}
+
+.quote img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    background: var(--bg-subtle);
+}
+
+.quote figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    letter-spacing: 0.01em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .quote {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
 }
 
 /* Footer */

@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { quotes } from '../data/quotes';
+---
+
+<Layout
+  title="Quotes — Sujay Khandekar"
+  description="Movie and other quotes Sujay Khandekar keeps coming back to."
+  ogDescription="A small collection of favorite quotes, as images."
+  path="/quotes"
+  wide
+>
+  <header class="page-header">
+    <p class="eyebrow"><a href="/">Sujay Khandekar</a></p>
+    <h1>Quotes</h1>
+    <p class="lede">Lines from movies and elsewhere that stick with me.</p>
+  </header>
+
+  {quotes.length === 0 ? (
+    <section class="quotes-empty" aria-live="polite">
+      <p>The first quote image is on its way. Check back soon.</p>
+    </section>
+  ) : (
+    <section class="quotes" aria-label="Favorite quotes">
+      <ul class="quote-list">
+        {quotes.map((quote, index) => (
+          <li class="quote" style={`--i: ${index}`}>
+            <figure>
+              <img
+                src={quote.image}
+                alt={quote.alt}
+                loading={index === 0 ? 'eager' : 'lazy'}
+                decoding="async"
+              />
+              {quote.source && <figcaption>{quote.source}</figcaption>}
+            </figure>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <footer>
+    <nav>
+      <a href="/">Home</a>
+      <a href="https://x.com/sujaykhandekar">X</a>
+      <a href="https://www.linkedin.com/in/sujaykhandekar/">LinkedIn</a>
+    </nav>
+  </footer>
+</Layout>
