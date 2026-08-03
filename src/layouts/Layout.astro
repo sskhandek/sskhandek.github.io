@@ -6,6 +6,8 @@ interface Props {
   description?: string;
   ogDescription?: string;
   path?: string;
+  /** Wider main column for image-led pages like Quotes */
+  wide?: boolean;
 }
 
 const {
@@ -13,6 +15,7 @@ const {
   description = 'Sujay Khandekar is Head of Forward Deployed Engineering at Orb in San Francisco.',
   ogDescription = 'Head of Forward Deployed Engineering at Orb. Co-inventor of the boba emoji.',
   path = '/',
+  wide = false,
 } = Astro.props;
 
 const canonicalURL = new URL(path, Astro.site);
@@ -44,7 +47,7 @@ const imageURL = new URL('/images/profile.jpg', Astro.site);
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <main class:list={[{ wide }]}>
         <slot />
     </main>
 </body>
