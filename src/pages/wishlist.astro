@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { wishlist } from '../data/wishlist';
+---
+
+<Layout
+    title="Wishlist — Sujay Khandekar"
+    description="A running list of things Sujay would happily receive as a gift."
+    ogDescription="A running list of things I would happily receive as a gift."
+    path="/wishlist"
+    noindex
+>
+    <header>
+        <h1>Wishlist</h1>
+        <p>Things I'd happily receive. No pressure, no expectations — your company is plenty.</p>
+    </header>
+
+    <section>
+        <ul class="wishlist">
+            {wishlist.map((item) => (
+                <li class="wishlist-item">
+                    <h2>
+                        {item.url ? <a href={item.url} rel="noopener noreferrer">{item.name}</a> : item.name}
+                    </h2>
+                    {item.price && <p class="price">{item.price}</p>}
+                    {item.note && <p class="note">{item.note}</p>}
+                </li>
+            ))}
+        </ul>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+    </footer>
+</Layout>

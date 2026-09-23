@@ -209,6 +209,42 @@ section {
     }
 }
 
+/* Wishlist */
+.wishlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+}
+
+.wishlist-item {
+    margin: 0;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #d5d0c8;
+}
+
+.wishlist-item:first-child {
+    border-top: 1px solid #d5d0c8;
+}
+
+.wishlist-item h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.wishlist-item .price {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+}
+
+.wishlist-item .note {
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
 /* Footer */
 footer {
     margin-top: 4rem;
