@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { wishlist } from '../../data/wishlist';
+
+// Unlisted wishlist: not linked from anywhere on the site,
+// excluded from search engines via noindex. Share the URL directly.
+---
+
+<Layout
+    path="/wishlist-2wkw85/"
+    title="Sujay's Wishlist"
+    description="A running list of things Sujay would love to receive."
+    noindex
+>
+    <header class="wishlist-header">
+        <h1>Sujay's Wishlist</h1>
+        <p>
+            A running list of things I'd love — if you're wondering what to get me,
+            start here. Newest ideas are at the top.
+        </p>
+    </header>
+
+    {wishlist.length === 0 ? (
+        <section class="wishlist-empty">
+            <p>Nothing here yet — check back soon.</p>
+        </section>
+    ) : (
+        <section aria-label="Wishlist items">
+            <ul class="wishlist">
+                {wishlist.map((item) => (
+                    <li class="wish-card">
+                        <div class="wish-top">
+                            <h2>
+                                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                                    {item.name}
+                                </a>
+                            </h2>
+                            {item.price && <span class="wish-price">{item.price}</span>}
+                        </div>
+                        {item.note && <p class="wish-note">{item.note}</p>}
+                        <a
+                            class="wish-link"
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View item →
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </section>
+    )}
+
+    <footer class="wishlist-footer">
+        <p>Know me well enough to go off-list? Even better.</p>
+    </footer>
+</Layout>
