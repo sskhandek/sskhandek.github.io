@@ -31,4 +31,12 @@ export interface WishlistItem {
  *
  * Newest first — friends see the top of the list first.
  */
-export const wishlist: WishlistItem[] = [];
+export const wishlist: WishlistItem[] = [
+  {
+    id: 'valkyries-mitchell-ness-hat',
+    name: 'Golden State Valkyries Mitchell & Ness Cream/Pink Pro Adjustable Hat',
+    url: 'https://wnbastore.nba.com/golden-state-valkyries/unisex-golden-state-valkyries-mitchell-and-ness-cream-pink-pro-adjustable-hat/t-24302696+p-357725317543179+z-9-2855006690',
+    price: '$37.99',
+    note: 'Unisex, one size fits most, snap closure. 25% off site-wide with code SWISH.',
+  },
+];
