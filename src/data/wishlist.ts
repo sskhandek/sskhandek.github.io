@@ -39,4 +39,31 @@ export const wishlist: WishlistItem[] = [
     price: '$37.99',
     note: 'Unisex, one size fits most, snap closure. 25% off site-wide with code SWISH.',
   },
+  {
+    id: 'olympus-xa2',
+    name: 'Olympus XA2 film camera',
+    url: 'https://brooklynfilmcamera.com/collections/cameras/products/olympus-xa2',
+    price: '$340',
+    note: "Heather's pick for a starter film camera. Bench-tested; optional A11 flash $90.",
+  },
+  {
+    id: 'bose-wired-anc-earbuds',
+    name: 'Bose wired ANC earbuds',
+    url: 'https://www.bose.com/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html',
+    price: '$99',
+    note: 'USB-C wired with ANC. Ships Oct 15, 2026.',
+  },
+  {
+    id: 'matic-robot-vacuum',
+    name: 'Matic robot vacuum',
+    url: 'https://maticrobots.com/product',
+    price: '$1,495',
+    note: 'Robot vacuum + mop with on-device processing.',
+  },
+  {
+    id: 'herman-miller-aeron',
+    name: 'Herman Miller Aeron',
+    url: 'https://store.hermanmiller.com/office-chairs-aeron/aeron-chair/100102649.html?lang=en_US&sku=100102649',
+    note: 'Likely size C.',
+  },
 ];
