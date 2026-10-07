@@ -35,8 +35,8 @@ export interface WishlistItem {
  */
 export const wishlist: WishlistItem[] = [
   {
-    id: 'shiny-magikarp-paldean-fates',
-    name: 'Shiny Magikarp, Paldean Fates',
+    id: 'shiny-magikarp-paldea-evolved',
+    name: 'Shiny Magikarp, Paldea Evolved',
     url: 'https://www.tcgplayer.com/product/497606/pokemon-sv02-paldea-evolved-magikarp-203-193',
     price: '$356.60',
     note: 'Ungraded (raw).',
