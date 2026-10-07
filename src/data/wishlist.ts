@@ -9,6 +9,8 @@ export interface WishlistItem {
   price?: string;
   /** Optional one-liner: size, color, why you want it, etc. */
   note?: string;
+  /** Optional ISO date when added, e.g. '2026-10-06' */
+  addedAt?: string;
 }
 
 /**
@@ -32,6 +34,14 @@ export interface WishlistItem {
  * Newest first — friends see the top of the list first.
  */
 export const wishlist: WishlistItem[] = [
+  {
+    id: 'shiny-magikarp-paldean-fates',
+    name: 'Shiny Magikarp, Paldean Fates',
+    url: 'https://www.tcgplayer.com/product/497606/pokemon-sv02-paldea-evolved-magikarp-203-193',
+    price: '$356.60',
+    note: 'Ungraded (raw).',
+    addedAt: '2026-10-06',
+  },
   {
     id: 'valkyries-mitchell-ness-hat',
     name: 'Golden State Valkyries Mitchell & Ness Cream/Pink Pro Adjustable Hat',
