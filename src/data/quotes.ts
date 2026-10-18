@@ -12,10 +12,17 @@ export interface Quote {
   image?: string;
 }
 
+
 /**
  * Newest first. Optional images live in public/images/quotes/.
  */
 export const quotes: Quote[] = [
+  {
+    id: 'lion-king-great-kings',
+    text: 'Look at the stars. The great kings of the past look down on us from those stars.',
+    source: 'The Lion King',
+    image: '/images/quotes/lion-king-stars.png',
+  },
   {
     id: 'before-sunrise-saved-time',
     text: 'People always talk about how great technology is, how it saves all this time. But what good is saved time if nobody uses it? It just turns into more busy work.',
