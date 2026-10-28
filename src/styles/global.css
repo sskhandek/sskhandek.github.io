@@ -285,6 +285,17 @@ footer a:hover {
     border-radius: 10px;
 }
 
+.wish-image {
+    display: block;
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: white;
+}
+
 .wish-top {
     display: flex;
     align-items: baseline;

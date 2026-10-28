@@ -29,6 +29,16 @@ import { wishlist } from '../../data/wishlist';
             <ul class="wishlist">
                 {wishlist.map((item) => (
                     <li class="wish-card">
+                        {item.image && (
+                            <a href={item.url} target="_blank" rel="noopener noreferrer">
+                                <img
+                                    class="wish-image"
+                                    src={item.image}
+                                    alt={item.name}
+                                    loading="lazy"
+                                />
+                            </a>
+                        )}
                         <div class="wish-top">
                             <h2>
                                 <a href={item.url} target="_blank" rel="noopener noreferrer">
