@@ -82,6 +82,7 @@ export const wishlist: WishlistItem[] = [
     url: 'https://heirloomsourdough.com/products/1-oz-active-liquid',
     price: '$14.99, free US shipping',
     note: '100+ year-old San Francisco family sourdough starter, started in 1916 and passed down through four generations. Live liquid-active starter with feeding and care instructions and a beginner-friendly recipe.',
+    image: '/images/wishlist/sourdough-sofia.jpg',
   },
   {
     id: 'shiny-magikarp-paldea-evolved',
