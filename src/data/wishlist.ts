@@ -94,15 +94,6 @@ export const wishlist: WishlistItem[] = [
     image: '/images/wishlist/sourdough-sofia.jpg',
   },
   {
-    id: 'shiny-magikarp-paldea-evolved',
-    name: 'Shiny Magikarp, Paldea Evolved',
-    url: 'https://www.tcgplayer.com/product/497606/pokemon-sv02-paldea-evolved-magikarp-203-193',
-    price: '$356.60',
-    note: 'Ungraded (raw).',
-    addedAt: '2026-10-06',
-    image: '/images/wishlist/magikarp.jpg',
-  },
-  {
     id: 'matic-robot-vacuum',
     name: 'Matic robot vacuum',
     url: 'https://maticrobots.com/product',
