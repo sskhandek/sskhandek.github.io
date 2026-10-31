@@ -37,6 +37,15 @@ export interface WishlistItem {
  */
 export const wishlist: WishlistItem[] = [
   {
+    id: 'manon-sills-gedda-rudel-abc-1974',
+    name: "Massenet's Manon, Beverly Sills (Manon), Nicolai Gedda (Des Grieux), with Gerard Souzay, Gabriel Bacquier, New Philharmonia Orchestra / Julius Rudel (4xLP stereo box set, ABC Records ABC/ATS-20007/4, US 1974)",
+    url: 'https://www.discogs.com/shop/item/2681747277',
+    price: '$10.75',
+    note: 'The classic stereo Manon, Sills at her peak in the 1970 recording. Seller sydsbooknvinyl, VG+ media / VG sleeve, booklet included; $2.25 + $8.50 shipping.',
+    addedAt: '2026-10-31',
+    image: '/images/wishlist/manon-sills.jpg',
+  },
+  {
     id: 'kleiber-beethoven-7-original-source',
     name: 'Beethoven Symphony No. 7, Carlos Kleiber / Vienna Philharmonic (Original Source LP)',
     url: 'https://elusivedisc.com/carlos-kleiber-beethoven-symphony-no-7-the-original-source-series-180g-lp/',
